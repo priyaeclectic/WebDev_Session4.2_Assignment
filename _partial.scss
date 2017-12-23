@@ -1,0 +1,8 @@
+@mixin background-color($color){   /*Partial mixin that contains definition for back ground color for the div. Additionally size n position parameters r defined */
+	background-color: $color;
+	top: 50px;
+	left: 50px;
+	height: 50%;
+	width: 50%;
+	position:relative;
+}

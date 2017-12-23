@@ -1,0 +1,24 @@
+@import 'partial';							/*import the partial scss into the main scss*/
+@mixin border-radius($rad){					/*mixin for defining border radius for the div*/
+	border-radius: $rad;
+}
+.prop{										/*defines border thickness*/
+	 border: 1px solid #ccc;
+}
+
+/*Classes for defining specific properties for the 3 divs*/
+.box1{
+	@include background-color($color:blue);		/*include background color from the partial scss file*/
+	@include border-radius($rad:5px);
+}
+
+.box2{
+	@extend .prop;								/*extends border thickness selectively for second div*/
+	@include background-color($color:green);
+	@include border-radius($rad:10px);
+}
+
+.box3{
+	@include background-color($color:red);
+	@include border-radius($rad:15px);
+}

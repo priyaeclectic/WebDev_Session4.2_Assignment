@@ -1,0 +1,42 @@
+/*import the partial scss into the main scss*/
+.prop, .box2 {
+  /*defines border thickness*/
+  border: 1px solid #ccc; }
+
+/*Classes for defining specific properties for the 3 divs*/
+.box1 {
+  /*Partial mixin that contains definition for back ground color for the div. Additionally size n position parameters r defined */
+  background-color: blue;
+  top: 50px;
+  left: 50px;
+  height: 50%;
+  width: 50%;
+  position: relative;
+  /*include background color from the partial scss file*/
+  /*mixin for defining border radius for the div*/
+  border-radius: 5px; }
+
+.box2 {
+  /*extends border thickness selectively for second div*/
+  /*Partial mixin that contains definition for back ground color for the div. Additionally size n position parameters r defined */
+  background-color: green;
+  top: 50px;
+  left: 50px;
+  height: 50%;
+  width: 50%;
+  position: relative;
+  /*mixin for defining border radius for the div*/
+  border-radius: 10px; }
+
+.box3 {
+  /*Partial mixin that contains definition for back ground color for the div. Additionally size n position parameters r defined */
+  background-color: red;
+  top: 50px;
+  left: 50px;
+  height: 50%;
+  width: 50%;
+  position: relative;
+  /*mixin for defining border radius for the div*/
+  border-radius: 15px; }
+
+/*# sourceMappingURL=main.css.map */
